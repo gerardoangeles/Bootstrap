@@ -1,0 +1,2345 @@
+<!doctype html>
+<html lang="en">
+  <head>    
+    <meta charset="utf-8">
+    <!-- 1. Bootstrap: viewport tag as well for proper responsive behavior in mobile devices. -->
+    <meta name="viewport"   content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+
+    <meta name     = "Keywords" 	          content = "Bootstrap, Scrum, Business Analyst, Julia, Python, Go, R, Ruby, ECMAScript, JavaScript, jQuery, D3, HTML, AWS, Data science">
+    <meta name     = "description"          content = "Gerardo Ángeles Nava.">
+    <meta property = "og:description"       content = "Gerardo Ángeles Nava.">
+    <meta property = "og:title" 			      content = "Agile Business Analyst, Developer, Googleyness, orientation and educational attention &#128218">        
+    <meta property = "og:url" 				      content = "https://gerardoangeles.github.io/">
+    <meta property = "og:image" 			      content = "https://gerardoangeles.github.io/pic/256.png">
+    
+    <!-- http -->
+    <meta http-equiv = "ExpiresAbsolute"    content = "0">
+    <meta http-equiv = "Expires"            content = "0">
+    <meta http-equiv = "Last-Modified"      content = "0">
+    <meta http-equiv = "Cache-Control"      content = "no-cache, mustrevalidate">
+    <meta http-equiv = "Pragma"             content = "no-cache">
+    
+    <meta name = "identifier"               content = "http://">
+    <meta name = "language" 	              content = "Castellano Español Spanish">
+    <meta name = "coverage" 	              content = "WorldWideWeb">
+    <meta name = "robots" 	                content = "all">
+    <meta name = "country" 	                content = "México, CDMX">
+    <meta name = "copyright" 	              content = "Copyright 1994 - Today">
+    <meta name = "author"		                content = "Gerardo Ángeles Nava">
+    
+    <!-- Required meta tags -->
+    <base target  = ""> 
+    <meta name = "google"                   value   = "notranslate">        
+    
+    <link rel = "shortcut icon"             href = "../_pic/favicon.ico" type="image/x-icon">
+    <link rel = "shortcut icon" 		        href = "../_pic/favicon.png" type="image/png">
+    <link rel = "icon"                      href = "../_pic/favicon.png" type="image/x-icon">
+    
+    <!-- 2. Bootstrap: CDN links CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap: icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
+  </head>
+
+  <body>
+    <div class="container" style="text-align: justify; font-size: 18px;">
+        <h3 id="index">Index</h3>
+        <hr width="25%">
+        <section>
+          <h4>Basic</h4>
+          <ul>            
+            <li><a href="#requirements">What you should know?</a></li>
+            <li><a href="#whatis">What is Bootstrap?</a></li>
+            <li><a href="#boot">What does an HTML document need to use Bootstrap and be responsive?</a></li>
+            <li><a href="#Reboot">Reboot</a></li>
+            <li><a href="#containers">Containers</a></li>
+            <li><a href="#icons">Icons</a></li>            
+            <li><a href="#colors">Colors</a>
+              <ul>
+                <li><a href="#bg">Background color</a></li>    
+              </ul>
+            </li>
+            <li><a href="#spacing">Spacing</a>
+              <ul>
+                <li><a href="#mar-pad">Margin and padding</a>
+                  <ul>
+                    <li><a href="#notation">Notation</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            
+            <li><a href="#display">Display</a>
+              <ul>                
+                <li><a href="#d-print">Display in print</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#position">Position</a>
+              <ul>                
+                <li><a href="#fix-top">Fixed top</a></li>
+                <li><a href="#fix-bot">Fixed bottom</a></li>
+                <li><a href="#sticky">Sticky top</a></li>
+                <li><a href="#responsive-sticky">Responsive sticky top</a></li>                
+                <li><a href="#sticky-bottom">Sticky bottom</a></li>                
+                <li><a href="#res-sticky-bot">Responsive sticky bottom</a></li>
+              </ul>
+            </li>
+
+            
+            <li><a href="#typography">Typography</a></li>            
+            <li><a href="#List-group">List group</a></li>
+            <li><a href="#Tables">Tables</a></li>            
+            <li><a href="#Images">Images</a></li>            
+            <li><a href="#Borders">Borders</a></li>
+            <li><a href="#Sizing">Sizing</a></li>
+            <li><a href="#Overflow">Overflow</a></li>
+            <li><a href="#Interactions">Interactions</a>
+              <ul>
+                <li><a href="#txt-sel">Text selection</a></li>
+                <li><a href="#pointer">Pointer events</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="#Stretched-link">Stretched link</a></li>                        
+            <li><a href="#Flexbox">Flexbox</a>
+              <ul>                
+                <li><a href="#axes">The two axes of flexbox</a>
+                  <ul>                    
+                    <li><a href="#main">The main axis</a></li>
+                    <li><a href="#cross">The cross axis</a></li>
+                  </ul>
+                </li>
+                <li><a href="#start-end">Start and end lines</a></li>                                
+                <li><a href="#flex-cont">The flex container</a></li>
+              </ul>
+            </li>
+
+            
+            <li><a href="#Flex">Flex</a>
+              <ul>                
+                <li><a href="#flex-beha">Enable flex behaviors</a></li>                
+                <li><a href="#f-dir">Direction</a></li>                
+                <li><a href="#f-justify">Justify content</a></li>                
+                <li><a href="#f-align">Align items</a></li>                
+                <li><a href="#f-fill">Fill</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#Grid-system">Grid system</a>
+              <ul>                
+                <li><a href="#g-works">How it works</a></li>              
+                <li><a href="#g-opt">Grid options</a></li>                
+                <li><a href="#g-res-cls">Responsive classes</a></li>                
+                <li><a href="#g-break-p">All breakpoints</a></li>                
+                <li><a href="#Columns">Columns</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="#Buttons">Buttons</a></li>
+            <li><a href="#nav-tab">Navs and tabs</a>
+              <ul>
+                <li><a href="#Base-nav">Base nav</a></li>
+                <li><a href="#Tabs">Tabs</a></li>    
+              </ul>
+            </li>
+
+            <li><a href="#Navbar">Navbar</a></li>
+            <li><a href="#Cards">Cards</a></li>    
+            <li><a href="#Pagination">Pagination</a></li>
+            <li><a href="#Progress">Progress</a></li>            
+            <li><a href="#Spinners">Spinners</a></li>
+            <li><a href="#Badges">Badges</a></li>
+            <li><a href="#Carousel">Carousel</a></li>
+            <li><a href="#Accordion">Accordion</a></li>
+            <li><a href="#Alerts">Alerts</a></li>
+            <li><a href="#Toasts">Toasts</a></li>
+            <li><a href="#Modal">Modal</a></li>
+            <li><a href="#Collapse">Collapse</a></li>
+            <li><a href="#Dropdowns">Dropdowns</a></li>
+            <li><a href="#Tooltips">Tooltips</a></li>
+            <li><a href="#Popovers">Popovers</a></li>
+            <li><a href="#Scrollspy">scrollspy</a></li>
+            <li><a href="#Forms">Forms</a></li>
+            <li><a href="#Select">Select</a></li>
+            <li><a href="#Floating-labels">Floating labels</a></li>            
+            <li><a href="#Checks">Checks and radios</a></li>
+            <li><a href="#Input-group">Input group</a></li>
+            <li><a href="#Validation">Validation</a></li>
+            
+            
+            <!--
+            <li><a href="#idname">topic</a></li>
+            -->
+          </ul>
+        </section>
+
+        <h3 id="index">References</h3>
+        <hr width="25%">
+        <section>
+          <ul>     
+            <li><a href="#References">References</a></li>
+          </ul>
+          <h4>Bootstrap</h4>
+          <ul>     
+            <li><a href="#getbootstrap">getbootstrap</a></li>
+          </ul>
+        </section>
+
+
+
+        <hr width="75%">
+
+        <h3 id="requirements">What you should know?</h3>
+        <section>
+          <p>
+            <ul>
+              <li><a target="_blank" href="../html/index.html">HTML</a></li>
+              <li><a target="_blank" href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>              
+              <li><a target="_blank" href="../js/index.html">JavaScript</a></li>
+            </ul>
+            <h4>ARIA</h4>
+            <p>
+              ARIA is shorthand for Accessible Rich Internet Applications. ARIA is a set of attributes you can add to HTML elements that define ways to make web content and applications accessible to users with disabilities who use assistive technologies (AT).
+            </p>
+            <p>
+              <a target="_blank" href="https://www.w3.org/TR/using-aria/">Using ARIA</a>
+            </p>
+
+            <h5>What does aria controls do bootstrap?</h5>
+            <p>
+              The aria-controls attribute identifies the element (or elements) whose contents or presence are controlled by the element on which the attribute is set, regardless of what type of interaction initiates the impacted behavior
+            </p>
+            <p>
+              <a target="_blank" href="https://www.w3.org/TR/wai-aria/">wai-aria</a>
+            </p>
+
+            <h4>toggle</h4>
+            <p>Switch from one effect, feature, or state to another by using a toggle</p>
+          </p>
+        </section>
+
+        <hr>
+        <h1>Bootstrap</h1>
+        <hr>
+
+
+        <h3 id="whatis">What is Bootstrap?</h3>
+        <section>
+            <h5>Build fast, responsive sites with Bootstrap</h5>
+          <p>            
+            Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+          </p>
+        </section>
+
+        
+        <h3 id="boot">What does an HTML document need to use Bootstrap and be responsive?</h3>
+        <section>
+          <p>So, you only need the following:</p>
+            <ol>
+                <li><b>Responsive meta tag</b>.
+                  Include the <b>viewport tag</b> as well for proper responsive behavior in mobile devices.</li>
+                <li>
+                  Include Bootstrap’s <b>CSS</b> 
+                  Place the link tag in the head for our CSS. 
+                  Learn more about <a target="_blank" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/#cdn-links">CDN links.</a>
+                </li>
+                <li>
+                  Include Bootstrap’s <b>JS</b>. 
+                  Place the link tag in the script tag for our JavaScript bundle 
+                  (including Popper for positioning dropdowns, poppers, and tooltips) before the closing body. 
+                  Learn more about <a target="_blank" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/#cdn-links">CDN links.</a>
+                </li>
+                <li>
+                  <i>Optionally</i>,
+                  you can also include <b>Popper</b> and our JS separately. 
+                  If you don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.
+                </li>
+            </ol>
+
+
+            <div class="highlight" style="background-color:rgb(239, 243, 245);">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="c">&lt;!-- Required meta tags --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+
+    <span class="c">&lt;!-- Bootstrap CSS --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+    <span class="c">&lt;!-- Optional JavaScript; choose one of the two! --&gt;</span>
+
+    <span class="c">&lt;!-- Option 1: Bootstrap Bundle with Popper --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+    <span class="c">&lt;!-- Option 2: Separate Popper and Bootstrap JS --&gt;</span>
+    <span class="c">&lt;!--
+</span><span class="c">    &lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"&gt;&lt;/script&gt;
+</span><span class="c">    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"&gt;&lt;/script&gt;
+</span><span class="c">    --&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre>
+            </div>
+
+            <p>
+              Look at the following template: <a target="_blank" href="bootstrap-tpl-1.html">Bootstrap tpl 1</a>
+            </p>
+
+            <br>
+            <div class="bg-warning" style="padding: 15px;border-radius: 15px">
+              <p>
+                <b>3 and 4</b>. 
+                When your code doesn't respond as expected, 
+                <i>especially when <b>copy-code</b></i>, be sure to double check points 3 and 4
+                be careful with versions. (JS/Popper)
+              </p>
+            </div>
+            <br>
+
+  
+
+            <div style="background-color:powderblue;padding: 15px;border-radius: 15px">
+              <p>
+                <b>On line</b>. As you can see, all the resources in the template are available on a server, so it is not necessary to install anything
+              </p>
+              <p>
+                <b>Off line</b>. However, it is possible to have these resources locally, for which it will be necessary to download the necessary files.
+              </p>
+            </div>
+            <br>
+            <div class="bg-info" style="padding: 15px;border-radius: 15px">
+              <p>
+                <b>Note</b>. It will be necessary to visit the Bootstrap site to check for changes in new versions, which is indicated in the same resource, for example bootstrap@5.3.0-alpha1
+              </p>
+            </div>
+          </section>
+
+          <br>
+          <h1 id="Reboot">Reboot</h1>
+          <section>
+            <p><a target="_blank" href="https://getbootstrap.com/docs/5.0/content/reboot/">Reboot</a> </p>
+            <p>For improved cross-browser rendering, we use Reboot to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
+            <p>
+              Reboot, a collection of element-specific CSS changes in a single file, kickstart Bootstrap to provide an elegant, consistent, and simple baseline to build upon.
+            </p>
+            <h4>
+              Approach
+            </h4>
+            <p>
+              Reboot builds upon Normalize, providing many HTML elements with somewhat 
+              opinionated styles using only element selectors. 
+              Additional styling is done only with classes. 
+              For example, we reboot some table styles for a simpler baseline and 
+              later provide .table, .table-bordered, and more.
+            </p>
+            <p>
+              Here are our guidelines and reasons for choosing what to override in Reboot:
+            </p>
+            <ul>
+              <li>Update some browser default values to use rems instead of ems for scalable component spacing.</li>
+              <li>Avoid margin-top. Vertical margins can collapse, yielding unexpected results. More importantly though, a single direction of margin is a simpler mental model.</li>
+              <li>For easier scaling across device sizes, block elements should use rems for margins.</li>
+              <li>Keep declarations of font-related properties to a minimum, using inherit whenever possible.             </li>
+            </ul>
+          </section>
+
+
+            <h1 id="containers">Containers</h1>
+            <section>
+              <p>
+                <a target="_blank" href="https://getbootstrap.com/docs/5.0/layout/containers/">Containers</a>
+              </p>
+              <p>
+                Containers are a fundamental building block of Bootstrap that contain, pad, and align your content within a given device or viewport.
+              </p>
+              
+              <h2>How they work</h2>
+              <p>
+                Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container.
+              </p>
+              <p>
+                Bootstrap comes with three different containers:
+              </p>
+              <ol>
+                <li>
+                  <code>.container</code>, which sets a max-width at each responsive breakpoint                  
+                </li>
+                <li>
+                  <code>.container-fluid</code>, which is width: 100% at all breakpoints
+                </li>
+                <li>
+                  <code>.container-{breakpoint}</code>, which is width: 100% until the specified breakpoint              
+                </li>
+              </ol>         
+              <p>
+                Look at the following template: 
+                <a target="_blank" href="bootstrap-tpl-container.html">Bootstrap container</a>
+              </p>
+            </section>
+    
+                        
+            <h3 id="icons">Icons</h3>
+            <section>
+              <p>
+                Free, high quality, open source icon library with over 1,800 icons. Include them anyway you like—SVGs, SVG sprite, or web fonts. Use them with or without Bootstrap in any project.
+              </p>
+              <p>Implementation</p>
+              <p>
+                <code>
+                  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" /&gt;
+                </code>
+              </p>
+              <p>
+                If you visit the site: <a target="_blank" href="https://icons.getbootstrap.com/">Bootstrap Icons</a>,
+                in the "Icons" section on the right there is a text box that is a filter to facilitate your search.
+              </p>
+              <p>
+                The results are shown below and you can click on the icon of your interest.
+              </p>
+              <p>
+                Again on the right side are the options for implementation or download
+              </p>
+              <p>
+                For example, if you filter by "user" and click on: "People circle" it is possible to copy and paste the following code:
+              </p>
+              <p>
+                <code>&lt;i class="bi bi-person-circle"&gt;</i></code>
+              </p>
+              <p>
+                <i class="bi bi-person-circle"></i> &#171; <i>If the icon is not visible, probably the css link referring to the bootstrap icons has not been integrated</i>.
+              </p>
+              <p><i class="bi bi-emoji-smile" style="color: green"></i></p>
+              <p>
+                <a target="_blank" href="https://blog.getbootstrap.com/2022/01/31/bootstrap-icons-1-8-0/">
+                  The Bootstrap Blog / Bootstrap Icons v1.8.0
+                </a>
+              </p>
+            </section>  
+
+        <h3 id="colors">Colors</h3>
+        <section>
+          <p>
+            <a target="_blank" href="https://getbootstrap.com/docs/5.1/utilities/colors/">Colors</a>
+          </p>
+          <p>
+            Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.
+          </p>
+          <ul>
+            <li><code>.text-primary</code></li>
+            <li><code>.text-secondary</code></li>
+            <li><code>.text-success</code></li>
+            <li><code>.text-danger</code></li>
+            <li><code>.text-warning</code></li>
+            <li><code>.text-info</code></li>
+            <li><code>.text-light</code></li>
+            <li><code>.text-dark</code></li>
+            <li><code>.text-body</code></li>
+            <li><code>.text-muted</code></li>
+            <li><code>.text-white</code></li>
+            <li><code>.text-black-50</code></li>
+            <li><code>.text-white-50</code></li>
+          </ul>
+          <p>
+            Look at the following template: 
+            <a target="_blank" href="bootstrap-tpl-color.html">
+              Bootstrap color
+            </a>
+          </p>
+          <p>
+            To change that opacity, override --bs-text-opacity via custom styles or inline styles.
+          </p>
+          <p>
+            Look at the following template: 
+            <a target="_blank" href="bootstrap-tpl-color-opacity.html">
+              Bootstrap color-opacity
+            </a>
+          </p>
+
+          <h4 id="bg">Background color</h4>          
+          <p>
+            Similar to the contextual text color classes, set the background of an element to any contextual class.
+          </p>
+          <p>
+            Look at the following template: 
+            <a target="_blank" href="bootstrap-tpl-color-bg.html">
+              Bootstrap Background color
+            </a>
+          </p>
+          <p>
+            Utility: <code>&lt;span style="color:var(--bs-purple)"&gt;U&lt;/span&gt;</code>
+          </p>
+        </section>
+      
+        <h3 id="Spacing">Spacing</h3>
+        <section>
+          <p>
+            <a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/spacing/">Spacing</a>
+          </p>
+          <p>
+            Bootstrap includes a wide range of shorthand responsive margin, padding, and gap utility classes to modify an element’s appearance.
+          </p>
+
+          <h4 id="mar-pad">Margin and padding</h4>
+          <p>
+            Assign responsive-friendly margin or padding 
+            values to an element or a subset of its sides with shorthand classes. 
+            <br>
+            Includes support for individual properties, 
+            all properties, and vertical and horizontal properties. 
+            <br>
+            Classes are built from a default Sass map ranging from .25rem to 3rem.
+          </p>
+
+          <h5 id="notation">Notation</h5>
+          <p>
+            Spacing utilities that apply to all breakpoints, from xs to xxl, 
+            have no breakpoint abbreviation in them. 
+            <br>
+            This is because those classes are applied from min-width: 0 and up, 
+            and thus are not bound by a media query. 
+            <br>
+            The remaining breakpoints, however, do include a breakpoint abbreviation.
+          </p>
+
+          <p>
+            The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm, md, lg, xl, and xxl.
+          </p>
+          <p>Where property is one of:</p>
+          <ul>
+            <li>m - for classes that set margin</li>
+            <li>p - for classes that set padding</li>
+          </ul>
+          
+          <p>Where sides is one of:</p>
+          <ul>
+            <li>t - for classes that set margin-top or padding-top</li>
+            <li>b - for classes that set margin-bottom or padding-bottom</li>
+            <li>s - (start) for classes that set margin-left or padding-left in LTR, margin-right or padding-right in RTL</li>
+            <li>e - (end) for classes that set margin-right or padding-right in LTR, margin-left or padding-left in RTL</li>
+            <li>x - for classes that set both *-left and *-right</li>
+            <li>y - for classes that set both *-top and *-bottom</li>
+            <li>blank - for classes that set a margin or padding on all 4 sides of the element</li>
+          </ul>
+
+          <p>Where size is one of:</p>
+          <ul>
+            <li>0 - for classes that eliminate the margin or padding by setting it to 0</li>
+            <li>1 - (by default) for classes that set the margin or padding to $spacer * .25</li>
+            <li>2 - (by default) for classes that set the margin or padding to $spacer * .5</li>
+            <li>3 - (by default) for classes that set the margin or padding to $spacer</li>
+            <li>4 - (by default) for classes that set the margin or padding to $spacer * 1.5</li>
+            <li>5 - (by default) for classes that set the margin or padding to $spacer * 3</li>
+            <li>auto - for classes that set the margin to auto</li>
+          </ul>
+          <p>
+            Look at the following template: 
+            <a target="_blank" href="bootstrap-tpl-spacing.html">
+              Spacing color
+            </a>
+          </p>
+        </section>
+
+        <h3 id="display">Display</h3>
+        <section>
+          <p>
+            <a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/display/">Display property</a>
+          </p>
+          <p>
+            Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some extras for controlling display when printing.
+          </p>
+          <p>Where value is one of:
+            <ul>
+              <li>none</li>
+              <li>inline</li>
+              <li>inline-block</li>
+              <li>block</li>
+              <li>grid</li>
+              <li>table</li>
+              <li>table-cell</li>
+              <li>table-row</li>
+              <li>flex</li>
+              <li>inline-flex</li>
+            </ul>
+          </p>
+
+          <h4 id="d-print">Display in print</h4>
+          <p>
+            Change the display value of elements when printing with our print display utility classes. 
+            <br>
+            Includes support for the same display values as our responsive .d-* utilities.
+            <ul>
+              <li>.d-print-none</li>
+              <li>.d-print-inline</li>
+              <li>.d-print-inline-block</li>
+              <li>.d-print-block</li>
+              <li>.d-print-grid</li>
+              <li>.d-print-table</li>
+              <li>.d-print-table-row</li>
+              <li>.d-print-table-cell</li>
+              <li>.d-print-flex</li>
+              <li>.d-print-inline-flex</li>
+            </ul>
+            
+            The print and display classes can be combined.
+          </p>
+
+          <p>
+            Look at the following template: 
+            <a target="_blank" href="bootstrap-tpl-display.html">Bootstrap display</a>
+          </p>
+          </section>
+        
+          <h3 id="position">Position</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/helpers/position/">Position</a>
+            </p>
+            <p>
+              Use these helpers for quickly configuring the position of an element.
+            </p>
+
+          <h4 id="fix-top">Fixed top</h4>
+          <p>
+            Position an element at the top of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.
+          </p>
+            
+          <h4 id="fix-bot">Fixed bottom</h4>
+          <p>
+            Position an element at the bottom of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.
+          </p>
+
+          <h4 id="sticky">Sticky top</h4>
+          <p>
+            Position an element at the top of the viewport, from edge to edge, but only after you scroll past it.
+          </p>
+
+          <h4 id="responsive-sticky">Responsive sticky top</h4>
+          <p>
+            Responsive variations also exist for .sticky-top utility.
+          </p>
+
+          <h4 id="sticky-bottom">Sticky bottom</h4>
+          <p>
+            Position an element at the bottom of the viewport, from edge to edge, but only after you scroll past it.
+          </p>
+
+          <h4 id="res-sticky-bot">Responsive sticky bottom</h4>
+          <p>
+            Responsive variations also exist for .sticky-bottom utility.
+          </p>
+
+          <p>
+            Look at the following template: 
+            <a target="_blank" href="bootstrap-tpl-position.html">Bootstrap position</a>
+          </p>
+        </section>
+  
+          
+          <h3 id="typography">Typography</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/content/typography/">Typography</a>
+            </p>
+            <p>
+              Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Typography.html">Bootstrap Typography</a>
+            </p>
+          </section>
+
+          
+          <h3 id="List-group">List group</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.3/components/list-group/#basic-example">List group</a>
+            </p>
+            <p>
+              List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-list-group.html">Bootstrap List group</a>
+            </p>
+          </section>
+
+          <h3 id="Tables">Tables</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/content/tables/">Tables</a>
+            </p>
+            <p>
+              Documentation and examples for opt-in styling of tables (given their prevalent 
+              use in JavaScript plugins) with Bootstrap.
+            </p>
+            <p>
+              Due to the widespread use of table elements across third-party widgets like calendars 
+              and date pickers, Bootstrap’s tables are opt-in. Add the base class .table to any 
+              table, then extend with our optional modifier classes or custom styles. 
+              
+              All table styles are not inherited in Bootstrap, meaning any nested tables can be 
+              styled independent from the parent.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Tables.html">Bootstrap Tables</a>
+            </p>
+          </section>
+
+          <h3 id="Images">Images</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/content/images/">Images</a>
+            </p>
+            <p>
+              Images in Bootstrap are made responsive with .img-fluid. This applies max-width: 100%; and height: auto; to the image so that it scales with the parent element.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Images.html">Bootstrap Images</a>
+            </p>
+          </section>
+            
+          <h3 id="Borders">Borders</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/utilities/borders/">Borders</a>
+            </p>
+            <p>
+              Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.
+            </p>
+
+            <h4>Border 1-5</h4>
+            <p>
+              Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Borders.html">Bootstrap Borders</a>
+            </p>
+          </section>
+
+          <h3 id="Sizing">Sizing</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/sizing/">Sizing</a>
+            </p>
+            <p>
+              Easily make an element as wide or as tall with our width and height utilities.
+            </p>
+            <h4>Relative to the parent</h4>
+            <p>
+              Width and height utilities are generated from the utility API in _utilities.scss. Includes support for 25%, 50%, 75%, 100%, and auto by default. Modify those values as you need to generate different utilities here.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Sizing.html">Bootstrap Sizing</a>
+            </p>
+          </section>
+
+          <h3 id="Overflow">Overflow</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/overflow/">Overflow</a>
+            </p>
+            <p>
+              Use these shorthand utilities for quickly configuring how content overflows an element.
+            </p>
+            <p>
+              Adjust the overflow property on the fly with four default values and classes. These classes are not responsive by default.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Overflow.html">Bootstrap Overflow</a>
+            </p>
+          </section>
+
+          <h3 id="Interactions">Interactions</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/interactions/">Interactions</a>
+            </p>
+            <p>
+              Utility classes that change how users interact with contents of a website.
+            </p>
+
+            <h4 id="txt-sel">Text selection</h4>
+            <p>
+              Change the way in which the content is selected when the user interacts with it.
+            </p>
+
+            <h4 id="pointer">Pointer events</h4>
+            <p>
+              Bootstrap provides .pe-none and .pe-auto classes to prevent or add element interactions.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Interactions.html">Bootstrap Interactions</a>
+            </p>
+          </section>
+
+          <h3 id="Stretched-link">Stretched link</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/helpers/stretched-link/">Stretched link</a>
+            </p>
+            <p>
+              Make any HTML element or Bootstrap component clickable by “stretching” a nested link via CSS.
+            </p>
+            <p>
+              Add .stretched-link to a link to make its containing block clickable via a ::after pseudo element. In most cases, this means that an element with position: relative; that contains a link with the .stretched-link class is clickable. Please note given how CSS position works, .stretched-link cannot be mixed with most table elements.
+            </p>
+            <p>
+              Cards have position: relative by default in Bootstrap, so in this case you can safely add the .stretched-link class to a link in the card without any other HTML changes.
+            </p>
+            <p>
+              Multiple links and tap targets are not recommended with stretched links. However, some position and z-index styles can help should this be required.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Stretched-link.html">Bootstrap Stretched link</a>
+            </p>
+          </section>
+
+          <h3 id="Flexbox">Flexbox</h3>
+          <section>
+
+            <div style="background-color:yellow;padding: 15px;border-radius: 15px">
+              The Flexible Box Layout Module in bootstrap is used for designing the flexible and responsive layout structure. It is used in Bootstrap 4.
+              <br><br>
+              <a target="_blank" href="https://www.geeksforgeeks.org/flexbox-utilities-in-bootstrap-with-examples/">Flexbox utilities in bootstrap with examples</a>
+            </div>
+    
+            <p>
+              <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a>
+            </p>
+            <p>
+              The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. 
+            </p>
+            <p>
+              When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with layout in one dimension at a time — either as a row or as a column. This can be contrasted with the two-dimensional model of CSS Grid Layout, which controls columns and rows together.
+            </p>
+            <h4 id="axes">The two axes of flexbox</h4>
+            <p>
+              When working with flexbox you need to think in terms of two axes — the main axis and the cross axis. The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it. Everything we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.
+            </p>
+            <h5 id="main">The main axis</h5>
+            <p>
+              The main axis is defined by flex-direction, which has four possible values:
+            </p>
+            <ol>
+              <li>row</li>
+              <li>row-reverse</li>
+              <li>column</li>
+              <li>column-reverse</li>
+            </ol>
+            <p>
+              Should you choose row or row-reverse, your main axis will run along the row in the inline direction.
+            </p>
+            <p>
+              Choose column or column-reverse and your main axis will run from the top of the page to the bottom — in the block direction.
+            </p>
+
+            <h5 id="cross">The cross axis</h5>
+            <p>
+              The cross axis runs perpendicular to the main axis, therefore if your flex-direction (main axis) is set to row or row-reverse the cross axis runs down the columns.
+            </p>
+            <p>
+              If your main axis is column or column-reverse then the cross axis runs along the rows.
+            </p>
+
+            <h4 id="start-end">Start and end lines</h4>
+            <p>
+              Another vital area of understanding is how flexbox makes no assumption about the writing mode of the document. In the past, CSS was heavily weighted towards horizontal and left-to-right writing modes. Modern layout methods encompass the range of writing modes and so we no longer assume that a line of text will start at the top left of a document and run towards the right-hand side, with new lines appearing one under the other.
+            </p>
+            <p>
+              If the flex-direction is row and I am working in English, then the start edge of the main axis will be on the left, the end edge on the right.
+            </p>
+            <p>
+              If I were to work in Arabic, then the start edge of my main axis would be on the right and the end edge on the left.
+            </p>
+            <p>
+              In both cases the start edge of the cross axis is at the top of the flex container and the end edge at the bottom, as both languages have a horizontal writing mode.
+            </p>
+            <p>
+              After a while, thinking about start and end rather than left and right becomes natural, and will be useful to you when dealing with other layout methods such as CSS Grid Layout which follow the same patterns.
+            </p>
+
+            <h4 id="flex-cont">The flex container</h4>
+            <p>
+              An area of a document laid out using flexbox is called a flex container. To create a flex container, we set the value of the area's container's display property to flex or inline-flex. As soon as we do this the direct children of that container become flex items. As with all properties in CSS, some initial values are defined, so when creating a flex container all of the contained flex items will behave in the following way.
+            </p>
+            <ul>
+              <li>Items display in a row (the flex-direction property's default is row).</li>
+              <li>The items start from the start edge of the main axis.</li>
+              <li>The items do not stretch on the main dimension, but can shrink.</li>
+              <li>The items will stretch to fill the size of the cross axis.</li>
+              <li>The flex-basis property is set to auto.</li>
+              <li>The flex-wrap property is set to nowrap.              </li>
+            </ul>
+            <p>
+              The result of this is that your items will all line up in a row, using the size of the content as their size in the main axis. If there are more items than can fit in the container, they will not wrap but will instead overflow. If some items are taller than others, all items will stretch along the cross axis to fill its full size.
+            </p>
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="flexbox.html">Bootstrap flexbox</a>
+            </p>
+          </section>
+  
+          <h3 id="Flex">Flex</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/flex/">Flex</a>
+            </p>
+            <p>
+              Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.
+            </p>
+
+            <h4 id="flex-beha">Enable flex behaviors</h4>
+            <p>
+              Apply display utilities to create a flexbox container and transform direct children elements into flex items. Flex containers and items are able to be modified further with additional flex properties.
+            </p>
+
+            <p>
+              Responsive variations also exist for .d-flex and .d-inline-flex.
+            </p>
+            <ul>
+              <ul>.d-flex</ul>
+              <ul>.d-inline-flex</ul>
+              <ul>.d-sm-flex</ul>
+              <ul>.d-sm-inline-flex</ul>
+              <ul>.d-md-flex</ul>
+              <ul>.d-md-inline-flex</ul>
+              <ul>.d-lg-flex</ul>
+              <ul>.d-lg-inline-flex</ul>
+              <ul>.d-xl-flex</ul>
+              <ul>.d-xl-inline-flex</ul>
+              <ul>.d-xxl-flex</ul>
+              <ul>.d-xxl-inline-flex</ul>
+            </ul>
+
+            <h4 id="f-dir">Direction</h4>
+            <p>
+              Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is row. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts).
+            </p>
+            <p>
+              Use .flex-row to set a horizontal direction (the browser default), or .flex-row-reverse to start the horizontal direction from the opposite side.
+            </p>
+            <p>
+              Use .flex-column to set a vertical direction, or .flex-column-reverse to start the vertical direction from the opposite side.
+            </p>
+
+            <p>
+              Responsive variations also exist for flex-direction.
+            </p>
+            <ul>
+              <li>.flex-row</li>
+              <li>.flex-row-reverse</li>
+              <li>.flex-column</li>
+              <li>.flex-column-reverse</li>
+              <li>.flex-sm-row</li>
+              <li>.flex-sm-row-reverse</li>
+              <li>.flex-sm-column</li>
+              <li>.flex-sm-column-reverse</li>
+              <li>.flex-md-row</li>
+              <li>.flex-md-row-reverse</li>
+              <li>.flex-md-column</li>
+              <li>.flex-md-column-reverse</li>
+              <li>.flex-lg-row</li>
+              <li>.flex-lg-row-reverse</li>
+              <li>.flex-lg-column</li>
+              <li>.flex-lg-column-reverse</li>
+              <li>.flex-xl-row</li>
+              <li>.flex-xl-row-reverse</li>
+              <li>.flex-xl-column</li>
+              <li>.flex-xl-column-reverse</li>
+              <li>.flex-xxl-row</li>
+              <li>.flex-xxl-row-reverse</li>
+              <li>.flex-xxl-column</li>
+              <li>.flex-xxl-column-reverse</li>
+            </ul>
+
+            <h4 id="f-justify">Justify content</h4>
+            <p>
+              Use justify-content utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if flex-direction: column). Choose from start (browser default), end, center, between, around, or evenly.
+            </p>
+            <p>
+              Responsive variations also exist for justify-content.
+            </p>
+            <ul>
+              <li>.justify-content-start</li>
+              <li>.justify-content-end</li>
+              <li>.justify-content-center</li>
+              <li>.justify-content-between</li>
+              <li>.justify-content-around</li>
+              <li>.justify-content-evenly</li>
+              <li>.justify-content-sm-start</li>
+              <li>.justify-content-sm-end</li>
+              <li>.justify-content-sm-center</li>
+              <li>.justify-content-sm-between</li>
+              <li>.justify-content-sm-around</li>
+              <li>.justify-content-sm-evenly</li>
+              <li>.justify-content-md-start</li>
+              <li>.justify-content-md-end</li>
+              <li>.justify-content-md-center</li>
+              <li>.justify-content-md-between</li>
+              <li>.justify-content-md-around</li>
+              <li>.justify-content-md-evenly</li>
+              <li>.justify-content-lg-start</li>
+              <li>.justify-content-lg-end</li>
+              <li>.justify-content-lg-center</li>
+              <li>.justify-content-lg-between</li>
+              <li>.justify-content-lg-around</li>
+              <li>.justify-content-lg-evenly</li>
+              <li>.justify-content-xl-start</li>
+              <li>.justify-content-xl-end</li>
+              <li>.justify-content-xl-center</li>
+              <li>.justify-content-xl-between</li>
+              <li>.justify-content-xl-around</li>
+              <li>.justify-content-xl-evenly</li>
+              <li>.justify-content-xxl-start</li>
+              <li>.justify-content-xxl-end</li>
+              <li>.justify-content-xxl-center</li>
+              <li>.justify-content-xxl-between</li>
+              <li>.justify-content-xxl-around</li>
+              <li>.justify-content-xxl-evenly</li>
+            </ul>
+
+            <h4 id="f-align">Align items</h4>
+            <p>
+              Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).
+            </p>
+            <p>
+              Responsive variations also exist for align-items.
+            </p>
+            <ul>
+              <li>.align-items-start</li>
+              <li>.align-items-end</li>
+              <li>.align-items-center</li>
+              <li>.align-items-baseline</li>
+              <li>.align-items-stretch</li>
+              <li>.align-items-sm-start</li>
+              <li>.align-items-sm-end</li>
+              <li>.align-items-sm-center</li>
+              <li>.align-items-sm-baseline</li>
+              <li>.align-items-sm-stretch</li>
+              <li>.align-items-md-start</li>
+              <li>.align-items-md-end</li>
+              <li>.align-items-md-center</li>
+              <li>.align-items-md-baseline</li>
+              <li>.align-items-md-stretch</li>
+              <li>.align-items-lg-start</li>
+              <li>.align-items-lg-end</li>
+              <li>.align-items-lg-center</li>
+              <li>.align-items-lg-baseline</li>
+              <li>.align-items-lg-stretch</li>
+              <li>.align-items-xl-start</li>
+              <li>.align-items-xl-end</li>
+              <li>.align-items-xl-center</li>
+              <li>.align-items-xl-baseline</li>
+              <li>.align-items-xl-stretch</li>
+              <li>.align-items-xxl-start</li>
+              <li>.align-items-xxl-end</li>
+              <li>.align-items-xxl-center</li>
+              <li>.align-items-xxl-baseline</li>
+              <li>.align-items-xxl-stretch</li>
+            </ul>
+
+            <h4 id="f-fill">Fill</h4>
+            <p>
+              Use the .flex-fill class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal space.
+            </p>
+            <p>Responsive variations also exist for flex-fill.</p>
+            <ul>
+              <li>.flex-fill</li>
+              <li>.flex-sm-fill</li>
+              <li>.flex-md-fill</li>
+              <li>.flex-lg-fill</li>
+              <li>.flex-xl-fill</li>
+              <li>.flex-xxl-fill</li>
+            </ul>
+
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Flex.html">Bootstrap Flex</a>
+            </p>
+          </section>
+  
+
+
+          <h3 id="Grid-system">Grid system</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/layout/grid/">Grid system</a>
+            </p>
+
+            <div style="background-color:powderblue;padding: 15px;border-radius: 15px">
+              <strong>New to or unfamiliar with flexbox?</strong> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">Read this CSS Tricks flexbox guide</a> for background, terminology, guidelines, and code snippets.
+            </div>            <br>
+
+            <p>
+              Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, six default responsive tiers, Sass variables and mixins, and dozens of predefined classes.            
+            </p>  
+            <p>
+              Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive.              
+            </p>
+
+            
+            <h4 id="g-works">How it works</h4>
+            <p>
+              Breaking it down, here’s how the grid system comes together:
+            </p>
+            <ul>
+              <li>Our grid supports six responsive breakpoints. Breakpoints are based on min-width media queries, meaning they affect that breakpoint and all those above it (e.g., .col-sm-4 applies to sm, md, lg, xl, and xxl). This means you can control container and column sizing and behavior by each breakpoint.</li>
+              <li>Containers center and horizontally pad your content. Use .container for a responsive pixel width, .container-fluid for width: 100% across all viewports and devices, or a responsive container (e.g., .container-md) for a combination of fluid and pixel widths.</li>
+              <li>Rows are wrappers for columns. Each column has horizontal padding (called a gutter) for controlling the space between them. This padding is then counteracted on the rows with negative margins to ensure the content in your columns is visually aligned down the left side. Rows also support modifier classes to uniformly apply column sizing and gutter classes to change the spacing of your content.</li>
+              <li>Columns are incredibly flexible. There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span (e.g., col-4 spans four). widths are set in percentages so you always have the same relative sizing.</li>
+              <li>Gutters are also responsive and customizable. Gutter classes are available across all breakpoints, with all the same sizes as our margin and padding spacing. Change horizontal gutters with .gx-* classes, vertical gutters with .gy-*, or all gutters with .g-* classes. .g-0 is also available to remove gutters.</li>
+              <li>Sass variables, maps, and mixins power the grid. If you don’t want to use the predefined grid classes in Bootstrap, you can use our grid’s source Sass to create your own with more semantic markup. We also include some CSS custom properties to consume these Sass variables for even greater flexibility for you.</li>
+            </ul>
+
+            <h4>Rows</h4>
+            <p>
+              The Bootstrap row is an essential element in the bootstrap grid system to hold the column class. It is used for horizontal partition in the container class of the web application. The bootstrap row class is used to make a horizontal layout to contain the column class on the web page.
+            </p>
+
+            <h4 id="g-opt">Grid options</h4>
+            <p>
+              Bootstrap’s grid system can adapt across all six default breakpoints, and any breakpoints you customize. The six default grid tiers are as follow:
+            </p>
+            <ul>
+              <li>Extra small (xs)</li>
+              <li>Small (sm)</li>
+              <li>Medium (md)</li>
+              <li>Large (lg)</li>
+              <li>Extra large (xl)</li>
+              <li>Extra extra large (xxl)</li>
+            </ul>
+
+            <h4 id="g-res-cls">Responsive classes</h4>
+            <p>
+              Bootstrap’s grid includes six tiers of predefined classes for building complex responsive layouts. Customize the size of your columns on extra small, small, medium, large, or extra large devices however you see fit.
+            </p>
+
+            <h4 id="g-break-p">All breakpoints</h4>
+            <p>
+              For grids that are the same from the smallest of devices to the largest, use the .col and .col-* classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to .col.              
+            </p>
+
+<code><pre>
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);  
+</pre></code>            
+
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Grid-system.html">Bootstrap Grid system</a>
+            </p>
+          </section>
+
+          <h3 id="Columns">Columns</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/layout/columns/">Columns</a>
+            </p>
+            <p>
+              Learn how to modify columns with a handful of options for alignment, ordering, and offsetting thanks to our flexbox grid system. Plus, see how to use column classes to manage widths of non-grid elements.
+            </p>
+
+            <h4>How they work</h4>
+            <ul>
+              <li>Columns build on the grid’s flexbox architecture. Flexbox means we have options for changing individual columns and modifying groups of columns at the row level. You choose how columns grow, shrink, or otherwise change.</li>
+              <li>When building grid layouts, all content goes in columns. The hierarchy of Bootstrap’s grid goes from container to row to column to your content. On rare occasions, you may combine content and column, but be aware there can be unintended consequences.</li>
+              <li>Bootstrap includes predefined classes for creating fast, responsive layouts. With six breakpoints and a dozen columns at each grid tier, we have dozens of classes already built for you to create your desired layouts. This can be disabled via Sass if you wish.</li>
+            </ul>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Columns.html">Bootstrap Columns</a>
+            </p>
+          </section>
+              
+
+          
+          <h3 id="Buttons">Buttons</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/buttons/">Buttons</a>
+            </p>
+            <p>
+              Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+            </p>
+            <p>
+              Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
+            </p>
+
+            <h4>Methods </h4>
+            <p>
+              You can create a button instance with the button constructor, for example:
+            </p>
+            <code>
+              const bsButton = new bootstrap.Button('#myButton')
+            </code>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Buttons.html">Bootstrap Buttons</a>
+            </p>
+          </section>
+
+          <h3 id="nav-tab">Navs and tabs</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/navs-tabs/">Navs and tabs</a>
+            </p>
+            <p>
+              Documentation and examples for how to use Bootstrap’s included navigation components.
+            </p>
+
+            <h4 id="Base-nav">Base nav</h4>
+            <p>
+              Navigation available in Bootstrap share general markup and styles, from the base .nav class to the active and disabled states. Swap modifier classes to switch between each style.
+            </p>
+
+            <p>
+              The base .nav component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.
+            </p>
+
+            <p>
+              Classes are used throughout, so your markup can be super flexible. Use ul's like above, ol if the order of your items is important, or roll your own with a nav element. Because the .nav uses display: flex, the nav links behave the same as nav items would, but without the extra markup.
+            </p>
+  
+            <h4 id="Tabs">Tabs</h4>
+            <p>
+              Takes the basic nav from above and adds the .nav-tabs class to generate a tabbed interface. Use them to create tabbable regions with our tab JavaScript plugin.
+            </p>
+
+
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-nav-tab.html">Bootstrap Navs and tabs</a>
+            </p>
+          </section>
+            
+          <h3 id="Navbar">Navbar</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/navbar/">Navbar</a>
+            </p>
+            <p>
+              Here’s what you need to know before getting started with the navbar:
+            </p>
+            <ul>
+              <li>Navbars require a wrapping .navbar with .navbar-expand{-sm|-md|-lg|-xl|-xxl} for responsive collapsing and color scheme classes.</li>
+              <li>Navbars and their contents are fluid by default. Change the container to limit their horizontal width in different ways.</li>
+              <li>Use our spacing and flex utility classes for controlling spacing and alignment within navbars.</li>
+              <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
+              <li>Ensure accessibility by using a <nav> element or, if using a more generic element such as a <div>, add a role="navigation" to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
+              <li>Indicate the current item by using aria-current="page" for the current page or aria-current="true" for the current item in a set.</li>
+              <li>New in v5.2.0: Navbars can be themed with CSS variables that are scoped to the .navbar base class. .navbar-light has been deprecated and .navbar-dark has been rewritten to override CSS variables instead of adding additional styles.              </li>
+            </ul>
+  
+            <h4>Supported content</h4>
+            <p>
+              Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:
+            </p>
+            <ul>
+              <li>.navbar-brand for your company, product, or project name.</li>
+              <li>.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).</li>
+              <li>.navbar-toggler for use with our collapse plugin and other navigation toggling behaviors.</li>
+              <li>Flex and spacing utilities for any form controls and actions.</li>
+              <li>.navbar-text for adding vertically centered strings of text.</li>
+              <li>.collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint.</li>
+              <li>Add an optional .navbar-scroll to set a max-height and scroll expanded navbar content.              </li>
+            </ul>
+
+            <h4>Nav </h4>
+            <p>
+              Navbar navigation links build on our .nav options with their own modifier class and require the use of toggler classes for proper responsive styling. Navigation in navbars will also grow to occupy as much horizontal space as possible to keep your navbar contents securely aligned.
+            </p>
+            <p>
+              Add the .active class on .nav-link to indicate the current page.
+            </p>
+            <p>
+              Please note that you should also add the aria-current attribute on the active .nav-link.
+            </p>
+
+
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Navbar.html">Bootstrap Navbar</a>
+            </p>
+          </section>
+  
+          <h3 id="Cards">Cards</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/components/card/">Cards</a>
+            </p>
+            <p>
+              Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.
+            </p>
+            <h4>About</h4>
+            <p>
+              A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.              
+            </p>
+            <p>
+              Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no margin by default, so use spacing utilities as needed.              
+            </p>
+
+            <h4 id="cont-types">Content types</h4>
+            <p>
+              Cards support a wide variety of content, including images, text, list groups, links, and more. 
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Cards.html">Bootstrap Cards</a>
+            </p>
+          </section>
+  
+          
+          <h3 id="Pagination">Pagination</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.3/components/pagination/">Pagination</a>
+            </p>
+            <p>
+              Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.
+            </p>
+            <h4>Overview </h4>
+            <p>
+              We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. 
+              Pagination is built with list HTML elements so screen readers can announce the number of available links. 
+              Use a wrapping nav element to identify it as a navigation section to screen readers and other assistive technologies.              
+            </p>
+            <p>
+              In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive aria-label for the <nav> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be aria-label="Search results pages".
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Pagination.html">Bootstrap Pagination</a>
+            </p>
+          </section>
+
+          <h3 id="Progress">Progress</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.3/components/progress/">Progress</a>
+            </p>
+            <p>
+              Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.
+            </p>
+            <h4>How it works</h4>
+            <p>
+              Progress components are built with two HTML elements, some CSS to set the width, and a few attributes. 
+              We don’t use the HTML5 progress element, ensuring you can stack progress bars, animate them, 
+              and place text labels over them.
+            </p>
+            <ul>
+              <li>We use the .progress as a wrapper to indicate the max value of the progress bar.</li>
+              <li>The .progress wrapper also requires a role="progress" and aria attributes to make it accessible, including an accessible name (using aria-label, aria-labelledby, or similar).</li>
+              <li>We use the inner .progress-bar purely for the visual bar and label.</li>
+              <li>The .progress-bar requires an inline style, utility class, or custom CSS to set its width.</li>
+              <li>We provide a special .progress-stacked class to create multiple/stacked progress bars.              </li>
+            </ul>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Progress.html">Bootstrap Progress</a>
+            </p>
+          </section>
+
+          
+          <h3 id="Spinners">Spinners</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/components/spinners/">Spinners</a>
+            </p>
+            <p>
+              Indicate the loading state of a component or page with Bootstrap spinners, built entirely with HTML, CSS, and no JavaScript.
+            </p>
+            <h4>About</h4>
+            <p>
+              Bootstrap “spinners” can be used to show the loading state in your projects. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them. You will, however, need some custom JavaScript to toggle their visibility. Their appearance, alignment, and sizing can be easily customized with our amazing utility classes.
+            </p>
+            <p>
+              For accessibility purposes, each loader here includes role="status" and a nested <span class="visually-hidden">Loading...</span>.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Spinners.html">Bootstrap Spinners</a>
+            </p>
+          </section>
+
+          <h3 id="Badges">Badges</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/badge/">Badges</a>
+            </p>
+            <p>
+              Documentation and examples for badges, our small count and labeling component.
+            </p>
+            <p>
+              Badges scale to match the size of the immediate parent element by using relative font sizing and em units. As of v5, badges no longer have focus or hover styles for links.              
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Badges.html">Bootstrap Badges</a>
+            </p>
+          </section>
+
+          
+          <h3 id="Carousel">Carousel</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.3/components/carousel/">Carousel</a>
+            </p>
+            <p>
+              A slideshow component for cycling through elements—images or slides of text—like a carousel.
+            </p>
+            <h4>How it works</h4>
+            <ul>
+              <li>The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.</li>
+              <li>For performance reasons, carousels must be manually initialized using the carousel constructor method. Without initialization, some of the event listeners (specifically, the events needed touch/swipe support) will not be registered until a user has explicitly activated a control or indicator.              </li>
+              <li>The only exception are autoplaying carousels with the data-bs-ride="carousel" attribute as these are initialized automatically on page load. If you’re using autoplaying carousels with the data attribute, don’t explicitly initialize the same carousels with the constructor method.              </li>
+              <li>Nested carousels are not supported. You should also be aware that carousels in general can often cause usability and accessibility challenges.              </li>
+            </ul>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Carousel.html">Bootstrap Carousel</a>
+            </p>
+          </section>
+  
+          
+          <h3 id="Accordion">Accordion</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/accordion/">Accordion</a>
+            </p>
+            <p>
+              Build vertically collapsing accordions in combination with our Collapse JavaScript plugin
+            </p>
+            <p>
+              Click the accordions below to expand/collapse the accordion content.
+            </p>
+
+            <h4>How it works</h4>
+            <p>
+              The accordion uses collapse internally to make it collapsible. To render an accordion that’s expanded, add the .open class on the .accordion.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Accordion.html">Bootstrap Accordion</a>
+            </p>
+          </section>
+
+          <h3 id="Alerts">Alerts</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/alerts/">Linkname</a>
+            </p>
+            <p>
+              Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+            </p>
+
+            <p>
+              Alerts are available for any length of text, as well as an optional close button. For proper styling, use one of the eight required contextual classes (e.g., .alert-success). For inline dismissal, use the alerts JavaScript plugin.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Alerts.html">Bootstrap Alerts</a>
+            </p>
+          </section>
+
+          <h3 id="Toasts">Toasts</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/toasts/">Toasts</a>
+            </p>
+            <p>
+              Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.
+            </p>
+            <p>
+              Toasts are lightweight notifications designed to mimic the push notifications that have been popularized by mobile and desktop operating systems. They’re built with flexbox, so they’re easy to align and position.
+            </p>
+            <p>
+              Things to know when using the toast plugin:
+            </p>
+            <ul>
+              <li>Toasts are opt-in for performance reasons, so you must initialize them yourself.</li>
+              <li>Toasts will automatically hide if you do not specify autohide: false.</li>
+            </ul>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Toasts.html">Bootstrap Toasts</a>
+            </p>
+          </section>
+            
+          <h3 id="Modal">Modal</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/modal/">Modal</a>
+            </p>
+            <p>
+              Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.
+            </p>
+            <h4>How it works</h4>
+            <p>
+              Before getting started with Bootstrap’s modal component, be sure to read the following as our menu options have recently changed.
+            </p>
+
+            <ul>
+              <li>Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document and remove scroll from the <body> so that modal content scrolls instead.</li>
+              <li>Clicking on the modal “backdrop” will automatically close the modal.</li>
+              <li>Bootstrap only supports one modal window at a time. Nested modals aren’t supported as we believe them to be poor user experiences.</li>
+              <li>Modals use position: fixed, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. You’ll likely run into issues when nesting a .modal within another fixed element.</li>
+              <li>Once again, due to position: fixed, there are some caveats with using modals on mobile devices. See our browser support docs for details.</li>
+              <li>Due to how HTML5 defines its semantics, the autofocus HTML attribute has no effect in Bootstrap modals. To achieve the same effect, use some custom JavaScript:              </li>
+            </ul>
+
+            <textarea cols="80" rows="7"  style="background-color: dimgray; color: lime;">const myModal = document.getElementById('myModal')
+              const myInput = document.getElementById('myInput')
+              
+              myModal.addEventListener('shown.bs.modal', () => {
+                myInput.focus()
+              })</textarea>
+
+
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Modal.html">Bootstrap Modal</a>
+            </p>
+          </section>
+
+          <h3 id="Collapse">Collapse</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/collapse/">Collapse</a>
+            </p>
+            <p>
+              Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
+            </p>
+            <h4>How it works</h4>
+            <p>
+              The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that are mapped to specific elements you toggle. Collapsing an element will animate the height from its current value to 0. Given how CSS handles animations, you cannot use padding on a .collapse element. Instead, use the class as an independent wrapping element.
+            </p>
+
+            <p>
+              Click the buttons below to show and hide another element via class changes:
+            </p>
+            <ul>
+              <li>.collapse hides content</li>
+              <li>.collapsing is applied during transitions</li>
+              <li>.collapse.show shows content</li>
+            </ul>
+            <p>
+              Generally, we recommend using a button with the data-bs-target attribute. While not recommended from a semantic point of view, you can also use a link with the href attribute (and a role="button"). In both cases, the data-bs-toggle="collapse" is required.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Collapse.html">Bootstrap Collapse</a>
+            </p>
+          </section>
+
+          <h3 id="Dropdowns">Dropdowns</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.3/components/dropdowns/">Dropdowns</a>
+            </p>
+            <p>
+              Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.
+            </p>
+            <p>
+              Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included Bootstrap dropdown JavaScript plugin. They’re toggled by clicking, not by hovering; this is an intentional design decision.
+            </p>
+            <p>
+              Dropdowns are built on a third party library, Popper, which provides dynamic positioning and viewport detection. Be sure to include popper.min.js before Bootstrap’s JavaScript or use bootstrap.bundle.min.js / bootstrap.bundle.js which contains Popper. Popper isn’t used to position dropdowns in navbars though as dynamic positioning isn’t required.
+            </p>
+
+            <p>
+              Wrap the dropdown’s toggle (your button or link) and the dropdown menu within .dropdown, 
+              or another element that declares position: relative;. Ideally, 
+              you should use a button element as the dropdown trigger, but the plugin will work with a elements as well. 
+              The examples shown here use semantic ul elements where appropriate, but custom markup is supported.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Dropdowns.html">Bootstrap Dropdowns</a>
+            </p>
+          </section>
+
+          <h3 id="Tooltips">Tooltips</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/tooltips/">Tooltips</a>
+            </p>
+            <p>
+              Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-bs-attributes for local title storage.
+            </p>
+            <p>
+              Things to know when using the tooltip plugin:
+            </p>
+            <ul>
+              <li>Tooltips rely on the third party library Popper for positioning. You must include popper.min.js before bootstrap.js, or use one bootstrap.bundle.min.js which contains Popper.</li>
+              <li>Tooltips are opt-in for performance reasons, so you must initialize them yourself.</li>
+              <li>Tooltips with zero-length titles are never displayed.</li>
+              <li>Specify container: 'body' to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
+              <li>Triggering tooltips on hidden elements will not work.</li>
+              <li>Tooltips for .disabled or disabled elements must be triggered on a wrapper element.</li>
+              <li>When triggered from hyperlinks that span multiple lines, tooltips will be centered. Use white-space: nowrap; on your <a>s to avoid this behavior.</li>
+              <li>Tooltips must be hidden before their corresponding elements have been removed from the DOM.</li>
+              <li>Tooltips can be triggered thanks to an element inside a shadow DOM.              </li>
+            </ul>
+            <p>
+              You must initialize tooltips before they can be used. One way to initialize all tooltips on a page would be to select them by their data-bs-toggle attribute, like so:              
+            </p>
+
+            <textarea cols="80" rows="4"  style="background-color: dimgray; color: lime;">const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+              const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</textarea>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Tooltips.html">Bootstrap Tooltips</a>
+            </p>
+          </section>
+            
+          
+          <h3 id="Popovers">Popovers</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/popovers/">Popovers</a>
+            </p>
+            <p>
+              Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
+            </p>
+            <p>
+              Things to know when using the popover plugin:
+            </p>
+            <ul>
+              <li>Popovers rely on the third party library Popper for positioning. You must include popper.min.js before bootstrap.js, or use one bootstrap.bundle.min.js which contains Popper.</li>
+              <li>Popovers require the popover plugin as a dependency.</li>
+              <li>Popovers are opt-in for performance reasons, so you must initialize them yourself.</li>
+              <li>Zero-length title and content values will never show a popover.</li>
+              <li>Specify container: 'body' to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
+              <li>Triggering popovers on hidden elements will not work.</li>
+              <li>Popovers for .disabled or disabled elements must be triggered on a wrapper element.</li>
+              <li>When triggered from anchors that wrap across multiple lines, popovers will be centered between the anchors’ overall width. Use .text-nowrap on your <a>s to avoid this behavior.</li>
+              <li>Popovers must be hidden before their corresponding elements have been removed from the DOM.</li>
+              <li>Popovers can be triggered thanks to an element inside a shadow DOM.              </li>
+            </ul>
+            <p>
+              you must initialize popovers before they can be used. One way to initialize all popovers on a page would be to select them by their data-bs-toggle attribute, like so:
+            </p>
+            <textarea cols="80" rows="4"  style="background-color: dimgray; color: lime;">const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+              const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))</textarea>
+
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Popovers.html">Bootstrap Popovers</a>
+            </p>
+          </section>
+
+          <h3 id="Scrollspy">Scrollspy</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.2/components/scrollspy/">Scrollspy</a>
+            </p>
+            <p>
+              Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.
+            </p>
+            <h4>How it works</h4>
+            <p>
+              Scrollspy toggles the .active class on anchor (a) elements when the element with the id referenced by the anchor’s href is scrolled into view. Scrollspy is best used in conjunction with a Bootstrap nav component or list group, but it will also work with any anchor elements in the current page. Here’s how it works.              
+            </p>
+            <ul>
+              <li>To start, scrollspy requires two things: a navigation, list group, or a simple set of links, plus a scrollable container. The scrollable container can be the body or a custom element with a set height and overflow-y: scroll.</li>
+              <li>On the scrollable container, add data-bs-spy="scroll" and data-bs-target="#navId" where navId is the unique id of the associated navigation. Be sure to also include a tabindex="0" to ensure keyboard access.                </li>
+              <li>As you scroll the “spied” container, an .active class is added and removed from anchor links within the associated navigation. Links must have resolvable id targets, otherwise they’re ignored. For example, a &lt:a href="#home"&gt;home&lt;/a&gt; must correspond to something in the DOM like &lt;div id="home"&gt;&lt;/div&gt;                </li>
+              <li>Target elements that are not visible will be ignored. See the Non-visible elements section below.              </li>
+            </ul>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Scrollspy.html">Bootstrap Scrollspy</a>
+            </p>
+          </section>
+
+          <h3 id="Forms">Forms</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/overview/">Forms</a>
+            </p>
+            <p>
+              Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.
+            </p>
+            <p>
+              Bootstrap’s form controls expand on our Rebooted form styles with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.
+            </p>
+            <p>
+              Be sure to use an appropriate type attribute on all inputs (e.g., email for email address or number for numerical information) to take advantage of newer input controls like email verification, number selection, and more.              
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Forms.html">Bootstrap Forms</a>
+            </p>
+          </section>
+
+          
+          <h3 id="Select">Select</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/select/">Select</a>
+            </p>
+            <p>
+              Customize the native select's with custom CSS that changes the element’s initial appearance.
+            </p>
+            <h4>Default</h4>
+            <p>
+              Custom select menus need only a custom class, .form-select 
+              to trigger the custom styles. 
+              Custom styles are limited to the select’s initial appearance and 
+              cannot modify the option's due to browser limitations.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Select.html">Bootstrap Select</a>
+            </p>
+          </section>
+
+          
+          <h3 id="Floating-labels">Floating labels</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/floating-labels/">Floating labels</a>
+            </p>
+            <p>
+              Create beautifully simple form labels that float over your input fields.
+            </p>
+            <p>
+              Wrap a pair of &lt;input class="form-control"&gt; and &lt;label&gt; 
+              elements in .form-floating to enable floating labels with Bootstrap’s textual form fields. 
+              A placeholder is required on each %lt;input&gt; 
+              as our method of CSS-only floating labels uses the :placeholder-shown pseudo-element. 
+              Also note that the &lt;input&gt; must come first so we can utilize a sibling selector (e.g., ~).
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Floating-labels.html">Bootstrap Floating labels</a>
+            </p>
+          </section>
+
+          <h3 id="Checks">Checks and radios</h3>
+          <section>
+            <p>
+              <a target="_blank" href="https://getbootstrap.com/docs/5.3/forms/checks-radios/">Checks and radios</a>
+            </p>
+            <p>
+              Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.
+            </p>
+            <h4>Approach </h4>
+            <p>
+              Browser default checkboxes and radios are replaced with the help of .form-check, a series of classes for both input types that improves the layout and behavior of their HTML elements, that provide greater customization and cross browser consistency. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.
+            </p>
+            <p>
+              Structurally, our input's and label's are sibling elements as opposed to an 
+              input within a label. 
+              This is slightly more verbose as you must specify id and 
+              for attributes to relate the input and label. 
+              We use the sibling selector (~) for all our input states, 
+              like :checked or :disabled. When combined with the .form-check-label class, 
+              we can easily style the text for each item based on the input'’s state.
+            </p>
+            <p>
+              Our checks use custom Bootstrap icons to indicate checked or indeterminate states.
+            </p>
+
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Checks-and-radios.html">Bootstrap Checks and radios</a>
+            </p>
+          </section>
+
+          <h3 id="Input-group">Input group</h3>
+          <section>
+            <p>
+              <a target="_blank" href="url">Input group</a>
+            </p>
+            <p>
+              Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.
+            </p>
+            <p>
+              Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <label>s outside the input group.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Input-group.html">Bootstrap Input group</a>
+            </p>
+          </section>
+            
+          <h3 id="Validation">Validation</h3>
+          <section>
+            <p>
+              <a target="_blank" href="url">Validation</a>
+            </p>
+            <p>
+              Provide valuable, actionable feedback to your users with HTML5 form validation, via browser default behaviors or custom styles and JavaScript.
+            </p>
+            <h4>How it works</h4>
+            <p>Here’s how form validation works with Bootstrap:</p>
+            <ul>
+              <li>HTML form validation is applied via CSS’s two pseudo-classes, :invalid and :valid. It applies to input, select, and textarea elements.</li>
+              <li>Bootstrap scopes the :invalid and :valid styles to parent .was-validated class, usually applied to the form. Otherwise, any required field without a value shows up as invalid on page load. This way, you may choose when to activate them (typically after form submission is attempted).</li>
+              <li>To reset the appearance of the form (for instance, in the case of dynamic form submissions using AJAX), remove the .was-validated class from the form again after submission.</li>
+              <li>As a fallback, .is-invalid and .is-valid classes may be used instead of the pseudo-classes for server-side validation. They do not require a .was-validated parent class.</li>
+              <li>Due to constraints in how CSS works, we cannot (at present) apply styles to a label that comes before a form control in the DOM without the help of custom JavaScript.</li>
+              <li>All modern browsers support the constraint validation API, a series of JavaScript methods for validating form controls.</li>
+              <li>Feedback messages may utilize the browser defaults (different for each browser, and unstylable via CSS) or our custom feedback styles with additional HTML and CSS.</li>
+              <li>You may provide custom validity messages with setCustomValidity in JavaScript.              </li>
+            </ul>
+            <p>
+              With that in mind, consider the following demos for our custom form validation styles, optional server-side classes, and browser defaults.
+            </p>
+  
+            <p>
+              Look at the following template: 
+              <a target="_blank" href="bootstrap-tpl-Validation.html">Bootstrap Validation</a>
+            </p>
+          </section>
+  
+      <!--
+      →
+        <h3 id="idname">Topic</h3>
+        <section>
+          <p>
+            <a target="_blank" href="url">Linkname</a>
+          </p>
+          <p>
+            lorem
+          </p>
+
+          <p>
+            Look at the following template: 
+            <a target="_blank" href="bootstrap-tpl-2.html">Bootstrap topic</a>
+          </p>
+        </section>
+          
+
+        <div style="background-color:powderblue;padding: 15px;border-radius: 15px">
+          <i>enfasis</i> de  <b>ealgo</b>, solo <b class="corn">corn</b> para.
+        </div>
+
+        <textarea cols="80" rows="1"  style="background-color: dimgray; color: lime;"></textarea>
+      -->
+
+
+
+        <center><hr width="50%" style="color: orange;"></center>
+        <h1 id="References">References</h1>
+        <section>
+            <ul>              
+              <li>
+                <a target="_blank" href="https://raybo.org/slides_bootstrap5/#/">raybo.org</a>
+              </li>              
+              
+              <li>
+                <a target="_blank" href="https://startbootstrap.com/">startbootstrap.com</a>
+              </li>              
+              <li>
+                <a target="_blank" href="https://getbootstrap.com/docs/5.0/examples/sidebars/#">sidebars</a>
+              </li>                            
+              <li>
+                <a target="_blank" href="https://dash-bootstrap-components.opensource.faculty.ai/docs/quickstart/">Quickstart Python, R and Julia dash-bootstrap-components</a>
+            </li>            
+            <li>
+                <a target="_blank" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">cheatsheet</a>
+            </li>
+          </ul>
+        </section>
+
+        <center><hr width="50%" style="color: orange;"></center>
+        <h1 id="getbootstrap">getbootstrap.com</h1>
+        <section>
+          <div class="container-xxl my-md-4 bd-layout">
+            <aside class="bd-sidebar">
+                <nav class=" bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+                    <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                        <li class="mb-1">
+                            <button class="collapse btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="false" aria-current="true">
+                            Getting started
+                            </button>
+                            <div class="collapse" id="getting-started-collapse" >
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" class="d-inline-flex align-items-center rounded">Introduction</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/getting-started/download/" class="d-inline-flex align-items-center rounded">Download</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/getting-started/contents/" class="d-inline-flex align-items-center rounded">Contents</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/getting-started/browsers-devices/" class="d-inline-flex align-items-center rounded">Browsers &amp; devices</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/getting-started/javascript/" class="d-inline-flex align-items-center rounded">JavaScript</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/getting-started/build-tools/" class="d-inline-flex align-items-center rounded">Build tools</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/getting-started/webpack/" class="d-inline-flex align-items-center rounded">Webpack</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/getting-started/parcel/" class="d-inline-flex align-items-center rounded">Parcel</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/getting-started/accessibility/" class="d-inline-flex align-items-center rounded">Accessibility</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/getting-started/rfs/" class="d-inline-flex align-items-center rounded">RFS</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/getting-started/rtl/" class="d-inline-flex align-items-center rounded active" aria-current="page">RTL</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
+                            Customize
+                            </button>
+
+                            <div class="collapse" id="customize-collapse" >
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/customize/overview/" class="d-inline-flex align-items-center rounded">Overview</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/customize/sass/" class="d-inline-flex align-items-center rounded">Sass</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/customize/options/" class="d-inline-flex align-items-center rounded">Options</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/customize/color/" class="d-inline-flex align-items-center rounded">Color</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/customize/components/" class="d-inline-flex align-items-center rounded">Components</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/customize/css-variables/" class="d-inline-flex align-items-center rounded">CSS variables</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/customize/optimize/" class="d-inline-flex align-items-center rounded">Optimize</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
+                            Layout
+                            </button>
+
+                            <div class="collapse" id="layout-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/layout/breakpoints/" class="d-inline-flex align-items-center rounded">Breakpoints</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/layout/containers/" class="d-inline-flex align-items-center rounded">Containers</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/layout/grid/" class="d-inline-flex align-items-center rounded">Grid</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/layout/columns/" class="d-inline-flex align-items-center rounded">Columns</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/layout/gutters/" class="d-inline-flex align-items-center rounded">Gutters</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/layout/utilities/" class="d-inline-flex align-items-center rounded">Utilities</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/layout/z-index/" class="d-inline-flex align-items-center rounded">Z-index</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#content-collapse" aria-expanded="false">
+                            Content
+                            </button>
+
+                            <div class="collapse" id="content-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/content/reboot/" class="d-inline-flex align-items-center rounded">Reboot</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/content/typography/" class="d-inline-flex align-items-center rounded">Typography</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/content/images/" class="d-inline-flex align-items-center rounded">Images</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/content/tables/" class="d-inline-flex align-items-center rounded">Tables</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/content/figures/" class="d-inline-flex align-items-center rounded">Figures</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#forms-collapse" aria-expanded="false">
+                            Forms
+                            </button>
+
+                            <div class="collapse" id="forms-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/overview/" class="d-inline-flex align-items-center rounded">Overview</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/form-control/" class="d-inline-flex align-items-center rounded">Form control</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/select/" class="d-inline-flex align-items-center rounded">Select</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/checks-radios/" class="d-inline-flex align-items-center rounded">Checks &amp; radios</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/range/" class="d-inline-flex align-items-center rounded">Range</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/input-group/" class="d-inline-flex align-items-center rounded">Input group</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/floating-labels/" class="d-inline-flex align-items-center rounded">Floating labels</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/layout/" class="d-inline-flex align-items-center rounded">Layout</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/forms/validation/" class="d-inline-flex align-items-center rounded">Validation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                            Components
+                            </button>
+
+                            <div class="collapse" id="components-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/accordion/" class="d-inline-flex align-items-center rounded">Accordion</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/alerts/" class="d-inline-flex align-items-center rounded">Alerts</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/badge/" class="d-inline-flex align-items-center rounded">Badge</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/breadcrumb/" class="d-inline-flex align-items-center rounded">Breadcrumb</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/buttons/" class="d-inline-flex align-items-center rounded">Buttons</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/button-group/" class="d-inline-flex align-items-center rounded">Button group</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/card/" class="d-inline-flex align-items-center rounded">Card</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/carousel/" class="d-inline-flex align-items-center rounded">Carousel</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/close-button/" class="d-inline-flex align-items-center rounded">Close button</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/collapse/" class="d-inline-flex align-items-center rounded">Collapse</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/dropdowns/" class="d-inline-flex align-items-center rounded">Dropdowns</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/list-group/" class="d-inline-flex align-items-center rounded">List group</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/modal/" class="d-inline-flex align-items-center rounded">Modal</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/navs-tabs/" class="d-inline-flex align-items-center rounded">Navs &amp; tabs</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/navbar/" class="d-inline-flex align-items-center rounded">Navbar</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/offcanvas/" class="d-inline-flex align-items-center rounded">Offcanvas</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/pagination/" class="d-inline-flex align-items-center rounded">Pagination</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/popovers/" class="d-inline-flex align-items-center rounded">Popovers</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/progress/" class="d-inline-flex align-items-center rounded">Progress</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/scrollspy/" class="d-inline-flex align-items-center rounded">Scrollspy</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/spinners/" class="d-inline-flex align-items-center rounded">Spinners</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/toasts/" class="d-inline-flex align-items-center rounded">Toasts</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/tooltips/" class="d-inline-flex align-items-center rounded">Tooltips</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#helpers-collapse" aria-expanded="false">
+                            Helpers
+                            </button>
+
+                            <div class="collapse" id="helpers-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/helpers/clearfix/" class="d-inline-flex align-items-center rounded">Clearfix</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/helpers/colored-links/" class="d-inline-flex align-items-center rounded">Colored links</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/helpers/ratio/" class="d-inline-flex align-items-center rounded">Ratio</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/helpers/position/" class="d-inline-flex align-items-center rounded">Position</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/helpers/visually-hidden/" class="d-inline-flex align-items-center rounded">Visually hidden</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/helpers/stretched-link/" class="d-inline-flex align-items-center rounded">Stretched link</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/helpers/text-truncation/" class="d-inline-flex align-items-center rounded">Text truncation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#utilities-collapse" aria-expanded="false">
+                            Utilities
+                            </button>
+
+                            <div class="collapse" id="utilities-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/api/" class="d-inline-flex align-items-center rounded">API</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/background/" class="d-inline-flex align-items-center rounded">Background</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/borders/" class="d-inline-flex align-items-center rounded">Borders</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/colors/" class="d-inline-flex align-items-center rounded">Colors</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/display/" class="d-inline-flex align-items-center rounded">Display</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/flex/" class="d-inline-flex align-items-center rounded">Flex</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/float/" class="d-inline-flex align-items-center rounded">Float</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/interactions/" class="d-inline-flex align-items-center rounded">Interactions</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/overflow/" class="d-inline-flex align-items-center rounded">Overflow</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/position/" class="d-inline-flex align-items-center rounded">Position</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/shadows/" class="d-inline-flex align-items-center rounded">Shadows</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/sizing/" class="d-inline-flex align-items-center rounded">Sizing</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/spacing/" class="d-inline-flex align-items-center rounded">Spacing</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/text/" class="d-inline-flex align-items-center rounded">Text</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/vertical-align/" class="d-inline-flex align-items-center rounded">Vertical align</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/utilities/visibility/" class="d-inline-flex align-items-center rounded">Visibility</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#extend-collapse" aria-expanded="false">
+                            Extend
+                            </button>
+
+                            <div class="collapse" id="extend-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/extend/approach/" class="d-inline-flex align-items-center rounded">Approach</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/extend/icons/" class="d-inline-flex align-items-center rounded">Icons</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#about-collapse" aria-expanded="false">
+                            About
+                            </button>
+
+                            <div class="collapse" id="about-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/about/overview/" class="d-inline-flex align-items-center rounded">Overview</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/about/team/" class="d-inline-flex align-items-center rounded">Team</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/about/brand/" class="d-inline-flex align-items-center rounded">Brand</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/about/license/" class="d-inline-flex align-items-center rounded">License</a></li>
+                                    <li><a target="_blank" href="https://getbootstrap.com/docs/5.0/about/translations/" class="d-inline-flex align-items-center rounded">Translations</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        
+                        <li>
+                            <a target="_blank" href="https://getbootstrap.com/docs/5.0/migration/" class="d-inline-flex align-items-center rounded">
+                            Migration
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- complete-meanu -->
+                <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
+                  <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">Browse docs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button>
+                  </div>
+          
+                  <div class="offcanvas-body">
+                    <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation"><ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+                <li class="bd-links-group py-2">
+                  <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                      <svg class="bi me-2" style="color: var(--bs-indigo);" aria-hidden="true"><use xlink:href="#book-half"></use></svg>
+                    Getting started
+                  </strong>
+          
+                  <ul class="list-unstyled fw-normal pb-2 small">
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" class="bd-links-link d-inline-block rounded active" aria-current="page">Introduction</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/download/" class="bd-links-link d-inline-block rounded">Download</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/contents/" class="bd-links-link d-inline-block rounded">Contents</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/browsers-devices/" class="bd-links-link d-inline-block rounded">Browsers &amp; devices</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/javascript/" class="bd-links-link d-inline-block rounded">JavaScript</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/webpack/" class="bd-links-link d-inline-block rounded">Webpack</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/parcel/" class="bd-links-link d-inline-block rounded">Parcel</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/vite/" class="bd-links-link d-inline-block rounded">Vite</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/accessibility/" class="bd-links-link d-inline-block rounded">Accessibility</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/rfs/" class="bd-links-link d-inline-block rounded">RFS</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/rtl/" class="bd-links-link d-inline-block rounded">RTL</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/getting-started/contribute/" class="bd-links-link d-inline-block rounded">Contribute</a></li>
+                  </ul>
+                </li>
+                <li class="bd-links-group py-2">
+                  <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                      <svg class="bi me-2" style="color: var(--bs-pink);" aria-hidden="true"><use xlink:href="#palette2"></use></svg>
+                    Customize
+                  </strong>
+          
+                  <ul class="list-unstyled fw-normal pb-2 small">
+                      <li><a href="https://getbootstrap.com/docs/5.3/customize/overview/" class="bd-links-link d-inline-block rounded">Overview</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/customize/sass/" class="bd-links-link d-inline-block rounded">Sass</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/customize/options/" class="bd-links-link d-inline-block rounded">Options</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/customize/color/" class="bd-links-link d-inline-block rounded">Color</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/customize/color-modes/" class="bd-links-link d-inline-block rounded">Color modes</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/customize/components/" class="bd-links-link d-inline-block rounded">Components</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/customize/css-variables/" class="bd-links-link d-inline-block rounded">CSS variables</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/customize/optimize/" class="bd-links-link d-inline-block rounded">Optimize</a></li>
+                  </ul>
+                </li>
+                <li class="bd-links-group py-2">
+                  <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                      <svg class="bi me-2" style="color: var(--bs-teal);" aria-hidden="true"><use xlink:href="#grid-fill"></use></svg>
+                    Layout
+                  </strong>
+          
+                  <ul class="list-unstyled fw-normal pb-2 small">
+                      <li><a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/" class="bd-links-link d-inline-block rounded">Breakpoints</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/layout/containers/" class="bd-links-link d-inline-block rounded">Containers</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/layout/grid/" class="bd-links-link d-inline-block rounded">Grid</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/layout/columns/" class="bd-links-link d-inline-block rounded">Columns</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/layout/gutters/" class="bd-links-link d-inline-block rounded">Gutters</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/layout/utilities/" class="bd-links-link d-inline-block rounded">Utilities</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/layout/z-index/" class="bd-links-link d-inline-block rounded">Z-index</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/layout/css-grid/" class="bd-links-link d-inline-block rounded">CSS Grid</a></li>
+                  </ul>
+                </li>
+                <li class="bd-links-group py-2">
+                  <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                      <svg class="bi me-2" style="color: var(--bs-gray);" aria-hidden="true"><use xlink:href="#file-earmark-richtext"></use></svg>
+                    Content
+                  </strong>
+          
+                  <ul class="list-unstyled fw-normal pb-2 small">
+                      <li><a href="https://getbootstrap.com/docs/5.3/content/reboot/" class="bd-links-link d-inline-block rounded">Reboot</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/content/typography/" class="bd-links-link d-inline-block rounded">Typography</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/content/images/" class="bd-links-link d-inline-block rounded">Images</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/content/tables/" class="bd-links-link d-inline-block rounded">Tables</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/content/figures/" class="bd-links-link d-inline-block rounded">Figures</a></li>
+                  </ul>
+                </li>
+                <li class="bd-links-group py-2">
+                  <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                      <svg class="bi me-2" style="color: var(--bs-blue);" aria-hidden="true"><use xlink:href="#ui-radios"></use></svg>
+                    Forms
+                  </strong>
+          
+                  <ul class="list-unstyled fw-normal pb-2 small">
+                      <li><a href="https://getbootstrap.com/docs/5.3/forms/overview/" class="bd-links-link d-inline-block rounded">Overview</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/forms/form-control/" class="bd-links-link d-inline-block rounded">Form control</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/forms/select/" class="bd-links-link d-inline-block rounded">Select</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/forms/checks-radios/" class="bd-links-link d-inline-block rounded">Checks &amp; radios</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/forms/range/" class="bd-links-link d-inline-block rounded">Range</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/forms/input-group/" class="bd-links-link d-inline-block rounded">Input group</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/forms/floating-labels/" class="bd-links-link d-inline-block rounded">Floating labels</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/forms/layout/" class="bd-links-link d-inline-block rounded">Layout</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/forms/validation/" class="bd-links-link d-inline-block rounded">Validation</a></li>
+                  </ul>
+                </li>
+                <li class="bd-links-group py-2">
+                  <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                      <svg class="bi me-2" style="color: var(--bs-cyan);" aria-hidden="true"><use xlink:href="#menu-button-wide-fill"></use></svg>
+                    Components
+                  </strong>
+          
+                  <ul class="list-unstyled fw-normal pb-2 small">
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/accordion/" class="bd-links-link d-inline-block rounded">Accordion</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/alerts/" class="bd-links-link d-inline-block rounded">Alerts</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/badge/" class="bd-links-link d-inline-block rounded">Badge</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/breadcrumb/" class="bd-links-link d-inline-block rounded">Breadcrumb</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/buttons/" class="bd-links-link d-inline-block rounded">Buttons</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/button-group/" class="bd-links-link d-inline-block rounded">Button group</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/card/" class="bd-links-link d-inline-block rounded">Card</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/carousel/" class="bd-links-link d-inline-block rounded">Carousel</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/close-button/" class="bd-links-link d-inline-block rounded">Close button</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/collapse/" class="bd-links-link d-inline-block rounded">Collapse</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/dropdowns/" class="bd-links-link d-inline-block rounded">Dropdowns</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/list-group/" class="bd-links-link d-inline-block rounded">List group</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/modal/" class="bd-links-link d-inline-block rounded">Modal</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/navbar/" class="bd-links-link d-inline-block rounded">Navbar</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/navs-tabs/" class="bd-links-link d-inline-block rounded">Navs &amp; tabs</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/offcanvas/" class="bd-links-link d-inline-block rounded">Offcanvas</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/pagination/" class="bd-links-link d-inline-block rounded">Pagination</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/placeholders/" class="bd-links-link d-inline-block rounded">Placeholders</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/popovers/" class="bd-links-link d-inline-block rounded">Popovers</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/progress/" class="bd-links-link d-inline-block rounded">Progress</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/scrollspy/" class="bd-links-link d-inline-block rounded">Scrollspy</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/spinners/" class="bd-links-link d-inline-block rounded">Spinners</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/toasts/" class="bd-links-link d-inline-block rounded">Toasts</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/components/tooltips/" class="bd-links-link d-inline-block rounded">Tooltips</a></li>
+                  </ul>
+                </li>
+                <li class="bd-links-group py-2">
+                  <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                      <svg class="bi me-2" style="color: var(--bs-orange);" aria-hidden="true"><use xlink:href="#magic"></use></svg>
+                    Helpers
+                  </strong>
+          
+                  <ul class="list-unstyled fw-normal pb-2 small">
+                      <li><a href="https://getbootstrap.com/docs/5.3/helpers/clearfix/" class="bd-links-link d-inline-block rounded">Clearfix</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/helpers/color-background/" class="bd-links-link d-inline-block rounded">Color &amp; background</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/helpers/colored-links/" class="bd-links-link d-inline-block rounded">Colored links</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/helpers/position/" class="bd-links-link d-inline-block rounded">Position</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/helpers/ratio/" class="bd-links-link d-inline-block rounded">Ratio</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/helpers/stacks/" class="bd-links-link d-inline-block rounded">Stacks</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/helpers/stretched-link/" class="bd-links-link d-inline-block rounded">Stretched link</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/helpers/text-truncation/" class="bd-links-link d-inline-block rounded">Text truncation</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/helpers/vertical-rule/" class="bd-links-link d-inline-block rounded">Vertical rule</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/helpers/visually-hidden/" class="bd-links-link d-inline-block rounded">Visually hidden</a></li>
+                  </ul>
+                </li>
+                <li class="bd-links-group py-2">
+                  <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                      <svg class="bi me-2" style="color: var(--bs-red);" aria-hidden="true"><use xlink:href="#braces-asterisk"></use></svg>
+                    Utilities
+                  </strong>
+          
+                  <ul class="list-unstyled fw-normal pb-2 small">
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/api/" class="bd-links-link d-inline-block rounded">API</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/background/" class="bd-links-link d-inline-block rounded">Background</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/borders/" class="bd-links-link d-inline-block rounded">Borders</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/colors/" class="bd-links-link d-inline-block rounded">Colors</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/display/" class="bd-links-link d-inline-block rounded">Display</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/flex/" class="bd-links-link d-inline-block rounded">Flex</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/float/" class="bd-links-link d-inline-block rounded">Float</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/interactions/" class="bd-links-link d-inline-block rounded">Interactions</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/object-fit/" class="bd-links-link d-inline-block rounded">Object fit</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/opacity/" class="bd-links-link d-inline-block rounded">Opacity</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/overflow/" class="bd-links-link d-inline-block rounded">Overflow</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/position/" class="bd-links-link d-inline-block rounded">Position</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/shadows/" class="bd-links-link d-inline-block rounded">Shadows</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/sizing/" class="bd-links-link d-inline-block rounded">Sizing</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/spacing/" class="bd-links-link d-inline-block rounded">Spacing</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/text/" class="bd-links-link d-inline-block rounded">Text</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/vertical-align/" class="bd-links-link d-inline-block rounded">Vertical align</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/visibility/" class="bd-links-link d-inline-block rounded">Visibility</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/utilities/z-index/" class="bd-links-link d-inline-block rounded">Z-index</a></li>
+                  </ul>
+                </li>
+                <li class="bd-links-group py-2">
+                  <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                      <svg class="bi me-2" style="color: var(--bs-blue);" aria-hidden="true"><use xlink:href="#tools"></use></svg>
+                    Extend
+                  </strong>
+          
+                  <ul class="list-unstyled fw-normal pb-2 small">
+                      <li><a href="https://getbootstrap.com/docs/5.3/extend/approach/" class="bd-links-link d-inline-block rounded">Approach</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/extend/icons/" class="bd-links-link d-inline-block rounded">Icons</a></li>
+                  </ul>
+                </li>
+                <li class="bd-links-group py-2">
+                  <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                      <svg class="bi me-2" style="color: var(--bs-indigo);" aria-hidden="true"><use xlink:href="#globe2"></use></svg>
+                    About
+                  </strong>
+          
+                  <ul class="list-unstyled fw-normal pb-2 small">
+                      <li><a href="https://getbootstrap.com/docs/5.3/about/overview/" class="bd-links-link d-inline-block rounded">Overview</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/about/team/" class="bd-links-link d-inline-block rounded">Team</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/about/brand/" class="bd-links-link d-inline-block rounded">Brand</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/about/license/" class="bd-links-link d-inline-block rounded">License</a></li>
+                      <li><a href="https://getbootstrap.com/docs/5.3/about/translations/" class="bd-links-link d-inline-block rounded">Translations</a></li>
+                  </ul>
+                </li>
+                <li class="bd-links-span-all mt-1 mb-3 mx-4 border-top"></li>
+                <li class="bd-links-span-all">
+                  <a href="https://getbootstrap.com/docs/5.3/migration/" class="bd-links-link d-inline-block rounded small ">
+                    Migration
+                  </a>
+                </li>
+            </ul>
+          </nav>
+          
+                  </div>
+                </div>                
+
+            </aside>
+          </div>
+        </section>
+    </div>
+    <!-- 3. Bootstrap: CDN links JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- 4. Bootstrap: popper is optional -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>    
+
+    <script src="https://getbootstrap.com//docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="https://getbootstrap.com//docs/5.0/assets/js/docs.min.js"></script>    
+  
+</body>
+</html>
